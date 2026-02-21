@@ -420,8 +420,6 @@ class BoardService {
 
 		$this->eventDispatcher->dispatchTyped(new AclCreatedEvent($acl));
 
-		// Retroactively publish card creation activities to newly added users
-		// so they can see the full activity history for all cards on the board.
 		if ($type === Acl::PERMISSION_TYPE_USER) {
 			$this->activityManager->retroactivelyPublishCardCreationActivities($boardId, $participant);
 		}

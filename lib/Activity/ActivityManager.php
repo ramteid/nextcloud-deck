@@ -581,47 +581,28 @@ class ActivityManager {
 	}
 
 	/**
-	 * Retroactively publish card creation activities to a newly added board member.
-	 *
-	 * When a user is added to a board after cards have already been created, they would
-	 * normally not see those cards' initial creation events in their activity history.
-	 * This method creates card_create activity entries for all non-deleted cards in the
-	 * board so the new user can see the full activity history.
+	 * Publish card_create activity entries for all existing cards to a newly added board member,
+	 * so they can see the full history after the board is shared with them.
 	 */
 	public function retroactivelyPublishCardCreationActivities(int $boardId, string $userId): void {
-		try {
-			$cards = $this->cardMapper->findAllByBoardIdNonDeleted($boardId);
-		} catch (\Exception $e) {
-			return;
-		}
-
+		$cards = $this->cardMapper->findAllByBoardIdNonDeleted($boardId);
 		foreach ($cards as $card) {
-			try {
-				$author = $card->getOwner();
-				if ($author === null) {
-					continue;
-				}
-
-				$subjectParams = $this->findDetailsForCard($card->getId());
-				$subjectParams['author'] = $author;
-
-				$createdAt = $card->getCreatedAt();
-				if ($createdAt === null) {
-					continue;
-				}
-
-				$event = $this->manager->generateEvent();
-				$event->setApp('deck')
-					->setType('deck')
-					->setAuthor($author)
-					->setObject(self::DECK_OBJECT_CARD, (int)$card->getId(), $card->getTitle())
-					->setSubject(self::SUBJECT_CARD_CREATE, $subjectParams)
-					->setTimestamp($createdAt)
-					->setAffectedUser($userId);
-				$this->manager->publish($event);
-			} catch (\Exception $e) {
-				// Ignore errors for individual cards to avoid blocking the share operation
+			$author = $card->getOwner();
+			$createdAt = $card->getCreatedAt();
+			if ($author === null || $createdAt === null) {
+				continue;
 			}
+			$subjectParams = $this->findDetailsForCard($card->getId());
+			$subjectParams['author'] = $author;
+			$event = $this->manager->generateEvent();
+			$event->setApp('deck')
+				->setType('deck')
+				->setAuthor($author)
+				->setObject(self::DECK_OBJECT_CARD, (int)$card->getId(), $card->getTitle())
+				->setSubject(self::SUBJECT_CARD_CREATE, $subjectParams)
+				->setTimestamp($createdAt)
+				->setAffectedUser($userId);
+			$this->manager->publish($event);
 		}
 	}
 }

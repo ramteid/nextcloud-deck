@@ -279,9 +279,6 @@ class CardMapper extends QBMapper implements IPermissionMapper {
 	}
 
 	/**
-	 * Find all non-deleted cards for a board, including archived ones.
-	 * Used for retroactively publishing activities to newly shared users.
-	 *
 	 * @return Card[]
 	 */
 	public function findAllByBoardIdNonDeleted(int $boardId): array {
