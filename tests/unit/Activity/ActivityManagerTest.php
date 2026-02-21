@@ -500,6 +500,86 @@ class ActivityManagerTest extends TestCase {
 		], $this->invokePrivate($this->activityManager, 'findDetailsForAttachment', [$attachment]));
 	}
 
+	public function testRetroactivelyPublishCardCreationActivities() {
+		$card1 = new Card();
+		$card1->setId(101);
+		$card1->setTitle('Card 1');
+		$card1->setStackId(42);
+		$card1->setOwner('user1');
+		$card1->setCreatedAt(1000);
+
+		$card2 = new Card();
+		$card2->setId(102);
+		$card2->setTitle('Card 2');
+		$card2->setStackId(42);
+		$card2->setOwner('user2');
+		$card2->setCreatedAt(2000);
+
+		$stack = new Stack();
+		$stack->setId(42);
+		$stack->setBoardId(999);
+
+		$boardData = ['id' => 999, 'title' => 'Test Board'];
+		$board = Board::fromRow($boardData);
+
+		$this->cardMapper->expects(self::once())
+			->method('findAllByBoardIdNonDeleted')
+			->with(999)
+			->willReturn([$card1, $card2]);
+
+		$this->cardMapper->expects(self::exactly(2))
+			->method('find')
+			->willReturnOnConsecutiveCalls($card1, $card2);
+
+		$this->stackMapper->expects(self::exactly(2))
+			->method('find')
+			->with(42)
+			->willReturn($stack);
+
+		$this->boardMapper->expects(self::exactly(2))
+			->method('find')
+			->with(999)
+			->willReturn($board);
+
+		$event = $this->createMock(IEvent::class);
+		$this->manager->expects(self::exactly(2))
+			->method('generateEvent')
+			->willReturn($event);
+		$event->expects(self::exactly(2))->method('setApp')->willReturn($event);
+		$event->expects(self::exactly(2))->method('setType')->willReturn($event);
+		$event->expects(self::exactly(2))->method('setAuthor')->willReturn($event);
+		$event->expects(self::exactly(2))->method('setObject')->willReturn($event);
+		$event->expects(self::exactly(2))->method('setSubject')->willReturn($event);
+		$event->expects(self::exactly(2))->method('setTimestamp')->willReturn($event);
+		$event->expects(self::exactly(2))->method('setAffectedUser')
+			->with('newuser')
+			->willReturn($event);
+		$this->manager->expects(self::exactly(2))
+			->method('publish')
+			->with($event);
+
+		$this->activityManager->retroactivelyPublishCardCreationActivities(999, 'newuser');
+	}
+
+	public function testRetroactivelyPublishCardCreationActivitiesSkipsCardWithNoOwner() {
+		$card = new Card();
+		$card->setId(101);
+		$card->setTitle('Card 1');
+		$card->setStackId(42);
+		// Owner is intentionally not set (null by default)
+		$card->setCreatedAt(1000);
+
+		$this->cardMapper->expects(self::once())
+			->method('findAllByBoardIdNonDeleted')
+			->with(999)
+			->willReturn([$card]);
+
+		$this->manager->expects(self::never())
+			->method('generateEvent');
+
+		$this->activityManager->retroactivelyPublishCardCreationActivities(999, 'newuser');
+	}
+
 	public function invokePrivate(&$object, $methodName, array $parameters = []) {
 		$reflection = new \ReflectionClass(get_class($object));
 		$method = $reflection->getMethod($methodName);

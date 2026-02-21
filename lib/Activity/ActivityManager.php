@@ -579,4 +579,49 @@ class ActivityManager {
 			return false;
 		}
 	}
+
+	/**
+	 * Retroactively publish card creation activities to a newly added board member.
+	 *
+	 * When a user is added to a board after cards have already been created, they would
+	 * normally not see those cards' initial creation events in their activity history.
+	 * This method creates card_create activity entries for all non-deleted cards in the
+	 * board so the new user can see the full activity history.
+	 */
+	public function retroactivelyPublishCardCreationActivities(int $boardId, string $userId): void {
+		try {
+			$cards = $this->cardMapper->findAllByBoardIdNonDeleted($boardId);
+		} catch (\Exception $e) {
+			return;
+		}
+
+		foreach ($cards as $card) {
+			try {
+				$author = $card->getOwner();
+				if ($author === null) {
+					continue;
+				}
+
+				$subjectParams = $this->findDetailsForCard($card->getId());
+				$subjectParams['author'] = $author;
+
+				$createdAt = $card->getCreatedAt();
+				if ($createdAt === null) {
+					continue;
+				}
+
+				$event = $this->manager->generateEvent();
+				$event->setApp('deck')
+					->setType('deck')
+					->setAuthor($author)
+					->setObject(self::DECK_OBJECT_CARD, (int)$card->getId(), $card->getTitle())
+					->setSubject(self::SUBJECT_CARD_CREATE, $subjectParams)
+					->setTimestamp($createdAt)
+					->setAffectedUser($userId);
+				$this->manager->publish($event);
+			} catch (\Exception $e) {
+				// Ignore errors for individual cards to avoid blocking the share operation
+			}
+		}
+	}
 }
