@@ -420,6 +420,10 @@ class BoardService {
 
 		$this->eventDispatcher->dispatchTyped(new AclCreatedEvent($acl));
 
+		if ($type === Acl::PERMISSION_TYPE_USER) {
+			$this->activityManager->retroactivelyPublishCardCreationActivities($boardId, $participant);
+		}
+
 		return $newAcl;
 	}
 

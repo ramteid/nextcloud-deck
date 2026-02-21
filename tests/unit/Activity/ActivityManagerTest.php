@@ -500,6 +500,43 @@ class ActivityManagerTest extends TestCase {
 		], $this->invokePrivate($this->activityManager, 'findDetailsForAttachment', [$attachment]));
 	}
 
+	public function testRetroactivelyPublishCardCreationActivities() {
+		$card = new Card();
+		$card->setId(101);
+		$card->setTitle('Card 1');
+		$card->setStackId(42);
+		$card->setOwner('user1');
+		$card->setCreatedAt(1000);
+
+		$stack = new Stack();
+		$stack->setId(42);
+		$stack->setBoardId(999);
+
+		$boardData = ['id' => 999, 'title' => 'Test Board'];
+		$board = Board::fromRow($boardData);
+
+		$this->cardMapper->expects(self::once())
+			->method('findAllByBoardIdNonDeleted')
+			->with(999)
+			->willReturn([$card]);
+		$this->cardMapper->expects(self::once())->method('find')->willReturn($card);
+		$this->stackMapper->expects(self::once())->method('find')->willReturn($stack);
+		$this->boardMapper->expects(self::once())->method('find')->willReturn($board);
+
+		$event = $this->createMock(IEvent::class);
+		$this->manager->expects(self::once())->method('generateEvent')->willReturn($event);
+		$event->method('setApp')->willReturn($event);
+		$event->method('setType')->willReturn($event);
+		$event->method('setAuthor')->willReturn($event);
+		$event->method('setObject')->willReturn($event);
+		$event->method('setSubject')->willReturn($event);
+		$event->method('setTimestamp')->willReturn($event);
+		$event->expects(self::once())->method('setAffectedUser')->with('newuser')->willReturn($event);
+		$this->manager->expects(self::once())->method('publish')->with($event);
+
+		$this->activityManager->retroactivelyPublishCardCreationActivities(999, 'newuser');
+	}
+
 	public function invokePrivate(&$object, $methodName, array $parameters = []) {
 		$reflection = new \ReflectionClass(get_class($object));
 		$method = $reflection->getMethod($methodName);
