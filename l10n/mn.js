@@ -378,6 +378,8 @@ OC.L10N.register(
     "Save" : "–•–∞–¥–≥–∞–ª–∞—Ö",
     "Today" : "”©–Ω”©”©–¥”©—Ä",
     "Tomorrow" : "–º–∞—Ä–≥–∞–∞—à",
-    "No due" : "Дуусах огноо байхгүй"
+    "No due" : "Дуусах огноо байхгүй",
+    "Set as default board" : "Үндсэн самбар болгох",
+    "Remove as default board" : "Үндсэн самбараас хасах"
 },
 "nplurals=2; plural=(n != 1);");

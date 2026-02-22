@@ -403,6 +403,8 @@ OC.L10N.register(
     "Save" : "Αποθήκευση",
     "Today" : "Σήμερα",
     "Tomorrow" : "Αύριο",
-    "No due" : "Χωρίς λήξη"
+    "No due" : "Χωρίς λήξη",
+    "Set as default board" : "Ορισμός ως προεπιλεγμένος πίνακας",
+    "Remove as default board" : "Κατάργηση ως προεπιλεγμένος πίνακας"
 },
 "nplurals=2; plural=(n != 1);");

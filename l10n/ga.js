@@ -411,6 +411,8 @@ OC.L10N.register(
     "Save" : "Sábháil",
     "Today" : "Inniu",
     "Tomorrow" : "Amárach",
-    "No due" : "Níl dlite"
+    "No due" : "Níl dlite",
+    "Set as default board" : "Socraigh mar chlár réamhshocraithe",
+    "Remove as default board" : "Bain mar chlár réamhshocraithe"
 },
 "nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : 4);");

@@ -320,6 +320,8 @@
     "Save" : "Запазване",
     "Today" : "Днес",
     "Tomorrow" : "Утре",
-    "No due" : "Не се дължи"
+    "No due" : "Не се дължи",
+    "Set as default board" : "Задай като дъска по подразбиране",
+    "Remove as default board" : "Премахни като дъска по подразбиране"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

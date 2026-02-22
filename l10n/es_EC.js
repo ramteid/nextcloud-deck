@@ -314,6 +314,8 @@ OC.L10N.register(
     "Save" : "Guardar",
     "Today" : "Hoy",
     "Tomorrow" : "Mañana",
-    "No due" : "Sin vencimiento"
+    "No due" : "Sin vencimiento",
+    "Set as default board" : "Establecer como tablero predeterminado",
+    "Remove as default board" : "Eliminar como tablero predeterminado"
 },
 "nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");

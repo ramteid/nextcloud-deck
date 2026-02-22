@@ -284,6 +284,8 @@ OC.L10N.register(
     "Save" : "Sarva",
     "Today" : "Oe",
     "Tomorrow" : "Cras",
-    "No due" : "Peruna iscadèntzia"
+    "No due" : "Peruna iscadèntzia",
+    "Set as default board" : "Ponni comente taulera predefinita",
+    "Remove as default board" : "Bogai comente taulera predefinita"
 },
 "nplurals=2; plural=(n != 1);");

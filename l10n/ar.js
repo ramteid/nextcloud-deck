@@ -389,6 +389,8 @@ OC.L10N.register(
     "Save" : "حفظ",
     "Today" : "اليوم",
     "Tomorrow" : "غدا",
-    "No due" : "غير محدد"
+    "No due" : "غير محدد",
+    "Set as default board" : "تعيين كلوحة افتراضية",
+    "Remove as default board" : "إزالة كلوحة افتراضية"
 },
 "nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;");

@@ -409,6 +409,8 @@ OC.L10N.register(
     "Save" : "Enregistrer",
     "Today" : "Aujourd'hui",
     "Tomorrow" : "Demain",
-    "No due" : "Sans échéance"
+    "No due" : "Sans échéance",
+    "Set as default board" : "Définir comme tableau par défaut",
+    "Remove as default board" : "Retirer comme tableau par défaut"
 },
 "nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");

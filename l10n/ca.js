@@ -387,6 +387,8 @@ OC.L10N.register(
     "Save" : "Desa",
     "Today" : "Avui",
     "Tomorrow" : "Demà",
-    "No due" : "Sense venciment"
+    "No due" : "Sense venciment",
+    "Set as default board" : "Estableix com a tauler predeterminat",
+    "Remove as default board" : "Elimina com a tauler predeterminat"
 },
 "nplurals=2; plural=(n != 1);");

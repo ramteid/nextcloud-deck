@@ -39,6 +39,8 @@ OC.L10N.register(
     "Close" : "Mdel",
     "Share" : "Bḍu",
     "Save" : "Sekles",
-    "Today" : "Ass-a"
+    "Today" : "Ass-a",
+    "Set as default board" : "Sbadu d alugen aɣbalu",
+    "Remove as default board" : "Kkes i alugen aɣbalu"
 },
 "nplurals=2; plural=(n != 1);");

@@ -370,6 +370,8 @@
     "Save" : "Lagre",
     "Today" : "I dag",
     "Tomorrow" : "I morgen",
-    "No due" : "Ingen forfall"
+    "No due" : "Ingen forfall",
+    "Set as default board" : "Sett som standardtavle",
+    "Remove as default board" : "Fjern som standardtavle"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

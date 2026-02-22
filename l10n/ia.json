@@ -40,6 +40,8 @@
     "Share" : "Compartir",
     "Save" : "Salveguardar",
     "Today" : "Hodie",
-    "Tomorrow" : "Deman"
+    "Tomorrow" : "Deman",
+    "Set as default board" : "Definir como planca predefinite",
+    "Remove as default board" : "Remover como planca predefinite"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

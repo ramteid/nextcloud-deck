@@ -411,6 +411,8 @@ OC.L10N.register(
     "Save" : "Gardar",
     "Today" : "Hoxe",
     "Tomorrow" : "Mañá",
-    "No due" : "Sen caducidade"
+    "No due" : "Sen caducidade",
+    "Set as default board" : "Establecer como taboleiro predeterminado",
+    "Remove as default board" : "Eliminar como taboleiro predeterminado"
 },
 "nplurals=2; plural=(n != 1);");

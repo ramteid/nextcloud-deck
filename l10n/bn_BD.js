@@ -32,6 +32,8 @@ OC.L10N.register(
     "Share" : "ভাগাভাগি কর",
     "Save" : "সংরক্ষণ",
     "Today" : "আজ",
-    "Tomorrow" : "আগামীকাল"
+    "Tomorrow" : "আগামীকাল",
+    "Set as default board" : "ডিফল্ট বোর্ড হিসেবে সেট করুন",
+    "Remove as default board" : "ডিফল্ট বোর্ড হিসেবে সরান"
 },
 "nplurals=2; plural=(n != 1);");

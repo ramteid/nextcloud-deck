@@ -348,6 +348,8 @@ OC.L10N.register(
     "Save" : "Opslaan",
     "Today" : "Vandaag",
     "Tomorrow" : "Morgen",
-    "No due" : "Geen vervallen"
+    "No due" : "Geen vervallen",
+    "Set as default board" : "Instellen als standaardbord",
+    "Remove as default board" : "Verwijderen als standaardbord"
 },
 "nplurals=2; plural=(n != 1);");

@@ -169,6 +169,8 @@ OC.L10N.register(
     "The card \"%s\" on \"%s\" has reached its due date." : "O cartão \"%s\" em \"%s\" atingiu a sua data limite.",
     "Save" : "Guardar",
     "Today" : "Hoje",
-    "Tomorrow" : "Amanhã"
+    "Tomorrow" : "Amanhã",
+    "Set as default board" : "Definir como quadro predefinido",
+    "Remove as default board" : "Remover como quadro predefinido"
 },
 "nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");

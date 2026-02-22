@@ -75,6 +75,8 @@ OC.L10N.register(
     "Share" : "Ulashish",
     "Save" : "Saqlash",
     "Today" : "Today",
-    "Tomorrow" : "Ertaga"
+    "Tomorrow" : "Ertaga",
+    "Set as default board" : "Standart taxta sifatida o'rnatish",
+    "Remove as default board" : "Standart taxta sifatida olib tashlash"
 },
 "nplurals=1; plural=0;");

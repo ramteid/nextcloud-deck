@@ -63,6 +63,8 @@ OC.L10N.register(
     "The card \"%s\" on \"%s\" has reached its due date." : "La tarjeta \"%s\" en \"%s\" ha alacanzado su fecha de entrega",
     "Save" : "Guardar",
     "Today" : "Hoy",
-    "Tomorrow" : "Mañana"
+    "Tomorrow" : "Mañana",
+    "Set as default board" : "Establecer como tablero predeterminado",
+    "Remove as default board" : "Eliminar como tablero predeterminado"
 },
 "nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");

@@ -409,6 +409,8 @@ OC.L10N.register(
     "Save" : "Зачувај",
     "Today" : "Денес",
     "Tomorrow" : "Утре",
-    "No due" : "Не истекува"
+    "No due" : "Не истекува",
+    "Set as default board" : "Постави како стандардна табла",
+    "Remove as default board" : "Отстрани како стандардна табла"
 },
 "nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;");

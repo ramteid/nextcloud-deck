@@ -411,6 +411,8 @@ OC.L10N.register(
     "Save" : "保存",
     "Today" : "今日",
     "Tomorrow" : "明日",
-    "No due" : "沒有到期的"
+    "No due" : "沒有到期的",
+    "Set as default board" : "設為預設板",
+    "Remove as default board" : "移除預設板"
 },
 "nplurals=1; plural=0;");

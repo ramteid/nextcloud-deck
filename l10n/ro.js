@@ -345,6 +345,8 @@ OC.L10N.register(
     "Save" : "Salvează",
     "Today" : "Azi",
     "Tomorrow" : "Mâine",
-    "No due" : "Fără scadență"
+    "No due" : "Fără scadență",
+    "Set as default board" : "Setează ca tablă implicită",
+    "Remove as default board" : "Elimină ca tablă implicită"
 },
 "nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));");

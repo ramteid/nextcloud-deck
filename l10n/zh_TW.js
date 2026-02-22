@@ -409,6 +409,8 @@ OC.L10N.register(
     "Save" : "儲存",
     "Today" : "今天",
     "Tomorrow" : "明天",
-    "No due" : "無到期日"
+    "No due" : "無到期日",
+    "Set as default board" : "設為預設看板",
+    "Remove as default board" : "移除預設看板"
 },
 "nplurals=1; plural=0;");

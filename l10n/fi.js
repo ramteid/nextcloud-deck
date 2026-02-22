@@ -280,6 +280,8 @@ OC.L10N.register(
     "No participants found" : "Ei osallistujia löydetty",
     "Save" : "Tallenna",
     "Today" : "Tänään",
-    "Tomorrow" : "Huomenna"
+    "Tomorrow" : "Huomenna",
+    "Set as default board" : "Aseta oletustauluksi",
+    "Remove as default board" : "Poista oletustaulusta"
 },
 "nplurals=2; plural=(n != 1);");

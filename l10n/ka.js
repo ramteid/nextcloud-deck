@@ -354,6 +354,8 @@ OC.L10N.register(
     "Save" : "Save",
     "Today" : "Today",
     "Tomorrow" : "Tomorrow",
-    "No due" : "No due"
+    "No due" : "No due",
+    "Set as default board" : "ნაგულისხმევ დაფად დაყენება",
+    "Remove as default board" : "ნაგულისხმევი დაფის მოხსნა"
 },
 "nplurals=2; plural=(n!=1);");

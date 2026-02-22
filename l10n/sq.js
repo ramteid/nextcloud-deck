@@ -65,6 +65,8 @@ OC.L10N.register(
     "Share" : "Shpërndaje",
     "Save" : "Ruaj",
     "Today" : "Sot",
-    "Tomorrow" : "Nesër"
+    "Tomorrow" : "Nesër",
+    "Set as default board" : "Vendoseni si tabelë të paracaktuar",
+    "Remove as default board" : "Hiqeni si tabelë të paracaktuar"
 },
 "nplurals=2; plural=(n != 1);");

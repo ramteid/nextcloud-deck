@@ -409,6 +409,8 @@ OC.L10N.register(
     "Save" : "Kaydet",
     "Today" : "Bugün",
     "Tomorrow" : "Yarın",
-    "No due" : "Bitiş yok"
+    "No due" : "Bitiş yok",
+    "Set as default board" : "Varsayılan pano olarak ayarla",
+    "Remove as default board" : "Varsayılan pano olarak kaldır"
 },
 "nplurals=2; plural=(n > 1);");

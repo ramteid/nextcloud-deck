@@ -409,6 +409,8 @@ OC.L10N.register(
     "Save" : "Simpan",
     "Today" : "Hari ini",
     "Tomorrow" : "Besok",
-    "No due" : "Tanpa jatuh tempo"
+    "No due" : "Tanpa jatuh tempo",
+    "Set as default board" : "Tetapkan sebagai papan default",
+    "Remove as default board" : "Hapus sebagai papan default"
 },
 "nplurals=1; plural=0;");

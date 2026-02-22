@@ -28,6 +28,8 @@ OC.L10N.register(
     "Share" : "Podjeli",
     "Save" : "Spremi",
     "Today" : "Danas",
-    "Tomorrow" : "Sutra"
+    "Tomorrow" : "Sutra",
+    "Set as default board" : "Postavi kao zadanu ploču",
+    "Remove as default board" : "Ukloni kao zadanu ploču"
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);");

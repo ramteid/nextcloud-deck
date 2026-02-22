@@ -33,6 +33,8 @@ OC.L10N.register(
     "Close" : "Cau",
     "Share" : "Rhannu",
     "Save" : "Cadw",
-    "Today" : "Heddiw"
+    "Today" : "Heddiw",
+    "Set as default board" : "Gosod fel bwrdd rhagosodedig",
+    "Remove as default board" : "Tynnu fel bwrdd rhagosodedig"
 },
 "nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != 11) ? 2 : 3;");

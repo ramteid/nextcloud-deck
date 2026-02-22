@@ -32,6 +32,8 @@
     "Share" : "Deelen",
     "Save" : "Späicheren",
     "Today" : "Haut",
-    "Tomorrow" : "Muer"
+    "Tomorrow" : "Muer",
+    "Set as default board" : "Als Standard-Board festleeën",
+    "Remove as default board" : "Als Standard-Board ewechhuelen"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

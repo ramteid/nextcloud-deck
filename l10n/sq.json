@@ -63,6 +63,8 @@
     "Share" : "Shpërndaje",
     "Save" : "Ruaj",
     "Today" : "Sot",
-    "Tomorrow" : "Nesër"
+    "Tomorrow" : "Nesër",
+    "Set as default board" : "Vendoseni si tabelë të paracaktuar",
+    "Remove as default board" : "Hiqeni si tabelë të paracaktuar"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

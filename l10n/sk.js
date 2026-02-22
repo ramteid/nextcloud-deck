@@ -411,6 +411,8 @@ OC.L10N.register(
     "Save" : "Uložiť",
     "Today" : "Dnes",
     "Tomorrow" : "Zajtra",
-    "No due" : "Žiadny termín dokončenia"
+    "No due" : "Žiadny termín dokončenia",
+    "Set as default board" : "Nastaviť ako predvolenú nástenku",
+    "Remove as default board" : "Odstrániť ako predvolenú nástenku"
 },
 "nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);");

@@ -372,6 +372,8 @@ OC.L10N.register(
     "Save" : "Gorde",
     "Today" : "Gaur",
     "Tomorrow" : "Bihar",
-    "No due" : "Epemugarik ez"
+    "No due" : "Epemugarik ez",
+    "Set as default board" : "Ezarri taula lehenetsira",
+    "Remove as default board" : "Kendu taula lehenetsitik"
 },
 "nplurals=2; plural=(n != 1);");

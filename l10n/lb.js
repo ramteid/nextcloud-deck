@@ -34,6 +34,8 @@ OC.L10N.register(
     "Share" : "Deelen",
     "Save" : "Späicheren",
     "Today" : "Haut",
-    "Tomorrow" : "Muer"
+    "Tomorrow" : "Muer",
+    "Set as default board" : "Als Standard-Board festleeën",
+    "Remove as default board" : "Als Standard-Board ewechhuelen"
 },
 "nplurals=2; plural=(n != 1);");

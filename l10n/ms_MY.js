@@ -24,6 +24,8 @@ OC.L10N.register(
     "Close" : "Tutup",
     "Share" : "Kongsi",
     "Save" : "Simpan",
-    "Today" : "Hari ini"
+    "Today" : "Hari ini",
+    "Set as default board" : "Tetapkan sebagai papan lalai",
+    "Remove as default board" : "Alih keluar sebagai papan lalai"
 },
 "nplurals=1; plural=0;");

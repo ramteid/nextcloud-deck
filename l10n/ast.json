@@ -107,6 +107,8 @@
     "Share" : "Compartir",
     "Save" : "Guardar",
     "Today" : "Güei",
-    "Tomorrow" : "Mañana"
+    "Tomorrow" : "Mañana",
+    "Set as default board" : "Afitar como tableru predetermináu",
+    "Remove as default board" : "Desafitar como tableru predetermináu"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

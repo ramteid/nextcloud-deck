@@ -385,6 +385,8 @@ OC.L10N.register(
     "Save" : "Vista",
     "Today" : "Í dag",
     "Tomorrow" : "Á morgun",
-    "No due" : "Enginn skilatími"
+    "No due" : "Enginn skilatími",
+    "Set as default board" : "Stilla sem sjálfgefna töflu",
+    "Remove as default board" : "Fjarlægja sem sjálfgefna töflu"
 },
 "nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);");
