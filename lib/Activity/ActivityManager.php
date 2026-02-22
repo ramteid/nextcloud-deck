@@ -585,24 +585,32 @@ class ActivityManager {
 	 * so they can see the full history after the board is shared with them.
 	 */
 	public function retroactivelyPublishCardCreationActivities(int $boardId, string $userId): void {
-		$cards = $this->cardMapper->findAllByBoardIdNonDeleted($boardId);
+		try {
+			$cards = $this->cardMapper->findAllByBoardIdNonDeleted($boardId);
+		} catch (\Exception $e) {
+			return;
+		}
 		foreach ($cards as $card) {
-			$author = $card->getOwner();
-			$createdAt = $card->getCreatedAt();
-			if ($author === null || $createdAt === null) {
-				continue;
+			try {
+				$author = $card->getOwner();
+				$createdAt = $card->getCreatedAt();
+				if ($author === null || $createdAt === null) {
+					continue;
+				}
+				$subjectParams = $this->findDetailsForCard($card->getId());
+				$subjectParams['author'] = $author;
+				$event = $this->manager->generateEvent();
+				$event->setApp('deck')
+					->setType('deck')
+					->setAuthor($author)
+					->setObject(self::DECK_OBJECT_CARD, (int)$card->getId(), $card->getTitle())
+					->setSubject(self::SUBJECT_CARD_CREATE, $subjectParams)
+					->setTimestamp($createdAt)
+					->setAffectedUser($userId);
+				$this->manager->publish($event);
+			} catch (\Exception $e) {
+				// skip cards whose related stack/board can no longer be resolved
 			}
-			$subjectParams = $this->findDetailsForCard($card->getId());
-			$subjectParams['author'] = $author;
-			$event = $this->manager->generateEvent();
-			$event->setApp('deck')
-				->setType('deck')
-				->setAuthor($author)
-				->setObject(self::DECK_OBJECT_CARD, (int)$card->getId(), $card->getTitle())
-				->setSubject(self::SUBJECT_CARD_CREATE, $subjectParams)
-				->setTimestamp($createdAt)
-				->setAffectedUser($userId);
-			$this->manager->publish($event);
 		}
 	}
 }

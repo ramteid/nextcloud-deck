@@ -37,6 +37,7 @@ use OCA\Deck\Db\StackMapper;
 use OCA\Deck\Service\PermissionService;
 use OCP\Activity\IEvent;
 use OCP\Activity\IManager;
+use OCP\AppFramework\Db\DoesNotExistException;
 use OCP\IL10N;
 use OCP\IUser;
 use OCP\L10N\IFactory;
@@ -533,6 +534,31 @@ class ActivityManagerTest extends TestCase {
 		$event->method('setTimestamp')->willReturn($event);
 		$event->expects(self::once())->method('setAffectedUser')->with('newuser')->willReturn($event);
 		$this->manager->expects(self::once())->method('publish')->with($event);
+
+		$this->activityManager->retroactivelyPublishCardCreationActivities(999, 'newuser');
+	}
+
+	public function testRetroactivelyPublishCardCreationActivitiesSkipsCardWithMissingStack() {
+		$card = new Card();
+		$card->setId(101);
+		$card->setTitle('Card 1');
+		$card->setStackId(42);
+		$card->setOwner('user1');
+		$card->setCreatedAt(1000);
+
+		$this->cardMapper->expects(self::once())
+			->method('findAllByBoardIdNonDeleted')
+			->willReturn([$card]);
+		$this->cardMapper->expects(self::once())
+			->method('find')
+			->willReturn($card);
+		$this->stackMapper->expects(self::once())
+			->method('find')
+			->willThrowException(new DoesNotExistException('stack gone'));
+
+		// no event must be published; the exception must not propagate
+		$this->manager->expects(self::never())->method('generateEvent');
+		$this->manager->expects(self::never())->method('publish');
 
 		$this->activityManager->retroactivelyPublishCardCreationActivities(999, 'newuser');
 	}
