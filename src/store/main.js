@@ -51,6 +51,7 @@ export default function storeFactory() {
 			navShown: localStorage.getItem('deck.navShown') === null || localStorage.getItem('deck.navShown') === 'true',
 			compactMode: localStorage.getItem('deck.compactMode') === 'true',
 			showCardCover: localStorage.getItem('deck.showCardCover') === 'true',
+			defaultBoardId: localStorage.getItem('deck.defaultBoardId'),
 			sidebarShown: false,
 			currentBoard: null,
 			currentCard: null,
@@ -233,6 +234,14 @@ export default function storeFactory() {
 			toggleShowCardCover(state) {
 				state.showCardCover = !state.showCardCover
 				localStorage.setItem('deck.showCardCover', state.showCardCover)
+			},
+			setDefaultBoardId(state, boardId) {
+				state.defaultBoardId = boardId
+				if (boardId) {
+					localStorage.setItem('deck.defaultBoardId', boardId)
+				} else {
+					localStorage.removeItem('deck.defaultBoardId')
+				}
 			},
 			setBoards(state, boards) {
 				state.boards = boards
@@ -455,6 +464,9 @@ export default function storeFactory() {
 			},
 			toggleShowCardCover({ commit }) {
 				commit('toggleShowCardCover')
+			},
+			setDefaultBoardId({ commit }, boardId) {
+				commit('setDefaultBoardId', boardId)
 			},
 			setCurrentBoard({ commit }, board) {
 				commit('setCurrentBoard', board)

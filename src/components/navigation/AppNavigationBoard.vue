@@ -242,7 +242,6 @@ export default {
 			cloneModalOpen: false,
 			exportModalOpen: false,
 			currentUser: getCurrentUser(),
-			defaultBoardId: localStorage.getItem('deck.defaultBoardId'),
 		}
 	},
 	computed: {
@@ -288,7 +287,7 @@ export default {
 			return ''
 		},
 		isDefaultBoard() {
-			return this.defaultBoardId === String(this.board.id)
+			return this.$store.state.defaultBoardId === String(this.board.id)
 		},
 	},
 	watch: {},
@@ -298,13 +297,7 @@ export default {
 	},
 	methods: {
 		toggleDefaultBoard() {
-			if (this.isDefaultBoard) {
-				localStorage.removeItem('deck.defaultBoardId')
-				this.defaultBoardId = null
-			} else {
-				localStorage.setItem('deck.defaultBoardId', String(this.board.id))
-				this.defaultBoardId = String(this.board.id)
-			}
+			this.$store.dispatch('setDefaultBoardId', this.isDefaultBoard ? null : String(this.board.id))
 		},
 		unDelete() {
 			clearTimeout(this.undoTimeoutHandle)
