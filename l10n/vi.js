@@ -397,6 +397,8 @@ OC.L10N.register(
     "Save" : "Lưu",
     "Today" : "Hôm nay",
     "Tomorrow" : "Ngày mai",
-    "No due" : "Không có ngày hết hạn"
+    "No due" : "Không có ngày hết hạn",
+    "Set as default board" : "Đặt làm bảng mặc định",
+    "Remove as default board" : "Xóa làm bảng mặc định"
 },
 "nplurals=1; plural=0;");

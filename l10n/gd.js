@@ -30,6 +30,8 @@ OC.L10N.register(
     "Close" : "Dùin",
     "Share" : "Co-roinn",
     "Save" : "Sàbhail",
-    "Today" : "An-diugh"
+    "Today" : "An-diugh",
+    "Set as default board" : "Suidhich mar bhòrd bunaiteach",
+    "Remove as default board" : "Thoir air falbh mar bhòrd bunaiteach"
 },
 "nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : (n > 2 && n < 20) ? 2 : 3;");

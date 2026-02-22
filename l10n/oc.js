@@ -64,6 +64,8 @@ OC.L10N.register(
     "Share" : "Partejar",
     "Save" : "Salvar",
     "Today" : "Uèi",
-    "Tomorrow" : "Deman"
+    "Tomorrow" : "Deman",
+    "Set as default board" : "Definir coma tableau per defaut",
+    "Remove as default board" : "Retirar coma tableau per defaut"
 },
 "nplurals=2; plural=(n > 1);");

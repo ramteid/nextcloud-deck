@@ -407,6 +407,8 @@
     "Save" : "ساقلا",
     "Today" : "بۈگۈن",
     "Tomorrow" : "ئەتە",
-    "No due" : "مۇۋاپىق ئەمەس"
+    "No due" : "مۇۋاپىق ئەمەس",
+    "Set as default board" : "سۈكۈتتىكى تاختا دەپ تەڭشەش",
+    "Remove as default board" : "سۈكۈتتىكى تاختا دەپ چىقىرىۋېتىش"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

@@ -409,6 +409,8 @@ OC.L10N.register(
     "Save" : "Hifadhi",
     "Today" : "Leo",
     "Tomorrow" : "Kesho",
-    "No due" : "Hakuna ukomo"
+    "No due" : "Hakuna ukomo",
+    "Set as default board" : "Weka kama ubao wa msingi",
+    "Remove as default board" : "Ondoa kama ubao wa msingi"
 },
 "nplurals=2; plural=(n != 1);");

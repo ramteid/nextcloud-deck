@@ -404,6 +404,8 @@ OC.L10N.register(
     "Save" : "Mentés",
     "Today" : "Ma",
     "Tomorrow" : "Holnap",
-    "No due" : "Nincs határidő"
+    "No due" : "Nincs határidő",
+    "Set as default board" : "Beállítás alapértelmezett táblának",
+    "Remove as default board" : "Eltávolítás alapértelmezett táblaként"
 },
 "nplurals=2; plural=(n != 1);");

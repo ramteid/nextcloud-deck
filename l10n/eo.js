@@ -128,6 +128,8 @@ OC.L10N.register(
     "The card \"%s\" on \"%s\" has reached its due date." : "La karto „%s“ sur „%s“ atingis sian limdaton.",
     "Save" : "Konservi",
     "Today" : "Hodiaŭ",
-    "Tomorrow" : "Morgaŭ"
+    "Tomorrow" : "Morgaŭ",
+    "Set as default board" : "Agordi kiel defaŭltan tabulon",
+    "Remove as default board" : "Forigi kiel defaŭltan tabulon"
 },
 "nplurals=2; plural=(n != 1);");

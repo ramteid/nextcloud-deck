@@ -371,6 +371,8 @@ OC.L10N.register(
     "Save" : "保存",
     "Today" : "今日",
     "Tomorrow" : "明日",
-    "No due" : "日付なし"
+    "No due" : "日付なし",
+    "Set as default board" : "デフォルトボードとして設定",
+    "Remove as default board" : "デフォルトボードの設定を解除"
 },
 "nplurals=1; plural=0;");

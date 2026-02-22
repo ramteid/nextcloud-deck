@@ -409,6 +409,8 @@ OC.L10N.register(
     "Save" : "Spara",
     "Today" : "Idag",
     "Tomorrow" : "Imorgon",
-    "No due" : "Inget slut"
+    "No due" : "Inget slut",
+    "Set as default board" : "Ange som standardtavla",
+    "Remove as default board" : "Ta bort som standardtavla"
 },
 "nplurals=2; plural=(n != 1);");

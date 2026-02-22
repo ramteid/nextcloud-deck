@@ -370,6 +370,8 @@ OC.L10N.register(
     "Save" : "저장",
     "Today" : "오늘",
     "Tomorrow" : "내일",
-    "No due" : "기한 없음"
+    "No due" : "기한 없음",
+    "Set as default board" : "기본 보드로 설정",
+    "Remove as default board" : "기본 보드에서 제거"
 },
 "nplurals=1; plural=0;");

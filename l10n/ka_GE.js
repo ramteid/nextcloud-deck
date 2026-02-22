@@ -64,6 +64,8 @@ OC.L10N.register(
     "The card \"%s\" on \"%s\" has reached its due date." : "ბარათმა \"%s\" \"%s\"-ზე მიაღწია დანიშნულ დროს.",
     "Save" : "შენახვა",
     "Today" : "დღეს",
-    "Tomorrow" : "ხვალ"
+    "Tomorrow" : "ხვალ",
+    "Set as default board" : "ნაგულისხმევ დაფად დაყენება",
+    "Remove as default board" : "ნაგულისხმევი დაფის მოხსნა"
 },
 "nplurals=2; plural=(n!=1);");

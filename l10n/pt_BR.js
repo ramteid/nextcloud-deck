@@ -409,6 +409,8 @@ OC.L10N.register(
     "Save" : "Salvar",
     "Today" : "Hoje",
     "Tomorrow" : "Amanhã",
-    "No due" : "Sem vencimento"
+    "No due" : "Sem vencimento",
+    "Set as default board" : "Definir como quadro padrão",
+    "Remove as default board" : "Remover como quadro padrão"
 },
 "nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");

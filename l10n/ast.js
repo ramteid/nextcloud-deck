@@ -109,6 +109,8 @@ OC.L10N.register(
     "Share" : "Compartir",
     "Save" : "Guardar",
     "Today" : "Güei",
-    "Tomorrow" : "Mañana"
+    "Tomorrow" : "Mañana",
+    "Set as default board" : "Afitar como tableru predetermináu",
+    "Remove as default board" : "Desafitar como tableru predetermináu"
 },
 "nplurals=2; plural=(n != 1);");

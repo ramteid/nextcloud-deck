@@ -46,6 +46,8 @@ OC.L10N.register(
     "No participants found" : "Geen deelnemers gevind",
     "Save" : "Stoor",
     "Today" : "Vandag",
-    "Tomorrow" : "Môre"
+    "Tomorrow" : "Môre",
+    "Set as default board" : "Stel as verstekbord",
+    "Remove as default board" : "Verwyder as verstekbord"
 },
 "nplurals=2; plural=(n != 1);");

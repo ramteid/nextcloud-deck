@@ -28,6 +28,8 @@ OC.L10N.register(
     "Close" : "மூடுக",
     "Share" : "பகிர்வு",
     "Save" : "சேமிக்க ",
-    "Today" : "இன்று"
+    "Today" : "இன்று",
+    "Set as default board" : "இயல்புநிலை பலகையாக அமை",
+    "Remove as default board" : "இயல்புநிலை பலகையிலிருந்து அகற்று"
 },
 "nplurals=2; plural=(n != 1);");

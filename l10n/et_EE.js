@@ -409,6 +409,8 @@ OC.L10N.register(
     "Save" : "Salvesta",
     "Today" : "Täna",
     "Tomorrow" : "Homme",
-    "No due" : "Tähtaega pole"
+    "No due" : "Tähtaega pole",
+    "Set as default board" : "Määra vaiketahvliks",
+    "Remove as default board" : "Eemalda vaiketahvliks"
 },
 "nplurals=2; plural=(n != 1);");

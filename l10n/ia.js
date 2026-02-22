@@ -42,6 +42,8 @@ OC.L10N.register(
     "Share" : "Compartir",
     "Save" : "Salveguardar",
     "Today" : "Hodie",
-    "Tomorrow" : "Deman"
+    "Tomorrow" : "Deman",
+    "Set as default board" : "Definir como planca predefinite",
+    "Remove as default board" : "Remover como planca predefinite"
 },
 "nplurals=2; plural=(n != 1);");

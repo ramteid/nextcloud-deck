@@ -33,6 +33,8 @@ OC.L10N.register(
     "Close" : "Փակել",
     "Share" : "Կիսվել",
     "Save" : "Պահպանել",
-    "Today" : "այսօր"
+    "Today" : "այսօր",
+    "Set as default board" : "Սահմանել որպես կանխադրված տախտակ",
+    "Remove as default board" : "Հեռացնել որպես կանխադրված տախտակ"
 },
 "nplurals=2; plural=(n != 1);");

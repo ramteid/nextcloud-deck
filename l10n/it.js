@@ -409,6 +409,8 @@ OC.L10N.register(
     "Save" : "Salva",
     "Today" : "Oggi",
     "Tomorrow" : "Domani",
-    "No due" : "Nessuna scadenza"
+    "No due" : "Nessuna scadenza",
+    "Set as default board" : "Imposta come bacheca predefinita",
+    "Remove as default board" : "Rimuovi come bacheca predefinita"
 },
 "nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");

@@ -35,6 +35,8 @@
     "Close" : "Lat att",
     "Share" : "Del",
     "Save" : "Lagre",
-    "Today" : "I dag"
+    "Today" : "I dag",
+    "Set as default board" : "Set som standardtavle",
+    "Remove as default board" : "Fjern som standardtavle"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

@@ -31,6 +31,8 @@ OC.L10N.register(
     "Share" : "බෙදාගන්න",
     "Save" : "සුරකින්න",
     "Today" : "අද",
-    "Tomorrow" : "හෙට"
+    "Tomorrow" : "හෙට",
+    "Set as default board" : "පෙරනිමි පුවරුව ලෙස සකසන්න",
+    "Remove as default board" : "පෙරනිමි පුවරුව ලෙස ඉවත් කරන්න"
 },
 "nplurals=2; plural=(n != 1);");

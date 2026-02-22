@@ -21,6 +21,8 @@ OC.L10N.register(
     "Close" : "Ýap",
     "Share" : "Paýlaş",
     "Save" : "Saklamak",
-    "Today" : "Şu gün"
+    "Today" : "Şu gün",
+    "Set as default board" : "Adaty tagta hökmünde bellemek",
+    "Remove as default board" : "Adaty tagta hökmünde aýyrmak"
 },
 "nplurals=2; plural=(n != 1);");

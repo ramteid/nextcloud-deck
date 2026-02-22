@@ -404,6 +404,8 @@ OC.L10N.register(
     "Save" : "ບັນທຶກ",
     "Today" : "ມື້ນີ້",
     "Tomorrow" : "Tomorrow",
-    "No due" : "No due"
+    "No due" : "No due",
+    "Set as default board" : "ຕັ້ງເປັນກະດານເລີ່ມຕົ້ນ",
+    "Remove as default board" : "ລຶບອອກຈາກກະດານເລີ່ມຕົ້ນ"
 },
 "nplurals=1; plural=0;");

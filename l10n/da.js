@@ -280,6 +280,8 @@ OC.L10N.register(
     "Save" : "Gem",
     "Today" : "I dag",
     "Tomorrow" : "I morgen",
-    "No due" : "Ikke forfalden"
+    "No due" : "Ikke forfalden",
+    "Set as default board" : "Angiv som standardtavle",
+    "Remove as default board" : "Fjern som standardtavle"
 },
 "nplurals=2; plural=(n != 1);");

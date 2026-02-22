@@ -323,6 +323,8 @@ OC.L10N.register(
     "Save" : "ذخیره",
     "Today" : "Today",
     "Tomorrow" : "فردا",
-    "No due" : "No due"
+    "No due" : "No due",
+    "Set as default board" : "تنظیم به عنوان تابلوی پیش‌فرض",
+    "Remove as default board" : "حذف به عنوان تابلوی پیش‌فرض"
 },
 "nplurals=2; plural=(n > 1);");

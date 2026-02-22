@@ -48,6 +48,8 @@ OC.L10N.register(
     "Due date" : "Rok",
     "Share" : "Podeli",
     "Save" : "Sačuvaj",
-    "Today" : "Danas"
+    "Today" : "Danas",
+    "Set as default board" : "Postavi kao podrazumevanu tablu",
+    "Remove as default board" : "Ukloni kao podrazumevanu tablu"
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);");

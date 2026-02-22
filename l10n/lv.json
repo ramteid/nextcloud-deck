@@ -82,6 +82,8 @@
     "Searching for users, groups and teams …" : "Meklē lietotājus, kopas un komandas …",
     "Save" : "Saglabāt",
     "Today" : "Šodien",
-    "Tomorrow" : "Rīt"
+    "Tomorrow" : "Rīt",
+    "Set as default board" : "Iestatīt kā noklusējuma tāfeli",
+    "Remove as default board" : "Noņemt kā noklusējuma tāfeli"
 },"pluralForm" :"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);"
 }

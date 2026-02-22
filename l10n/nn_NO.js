@@ -37,6 +37,8 @@ OC.L10N.register(
     "Close" : "Lat att",
     "Share" : "Del",
     "Save" : "Lagre",
-    "Today" : "I dag"
+    "Today" : "I dag",
+    "Set as default board" : "Set som standardtavle",
+    "Remove as default board" : "Fjern som standardtavle"
 },
 "nplurals=2; plural=(n != 1);");

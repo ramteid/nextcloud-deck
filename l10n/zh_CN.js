@@ -409,6 +409,8 @@ OC.L10N.register(
     "Save" : "保存",
     "Today" : "今天",
     "Tomorrow" : "明天",
-    "No due" : "没有到期的"
+    "No due" : "没有到期的",
+    "Set as default board" : "设为默认看板",
+    "Remove as default board" : "取消默认看板"
 },
 "nplurals=1; plural=0;");

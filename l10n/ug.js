@@ -409,6 +409,8 @@ OC.L10N.register(
     "Save" : "ساقلا",
     "Today" : "بۈگۈن",
     "Tomorrow" : "ئەتە",
-    "No due" : "مۇۋاپىق ئەمەس"
+    "No due" : "مۇۋاپىق ئەمەس",
+    "Set as default board" : "سۈكۈتتىكى تاختا دەپ تەڭشەش",
+    "Remove as default board" : "سۈكۈتتىكى تاختا دەپ چىقىرىۋېتىش"
 },
 "nplurals=2; plural=(n != 1);");

@@ -39,6 +39,8 @@ OC.L10N.register(
     "Share" : "Paylaş",
     "Save" : "Saxla",
     "Today" : "Bu gün",
-    "Tomorrow" : "Sabah"
+    "Tomorrow" : "Sabah",
+    "Set as default board" : "Standart lövhə kimi təyin et",
+    "Remove as default board" : "Standart lövhə olaraq sil"
 },
 "nplurals=2; plural=(n != 1);");

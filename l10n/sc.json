@@ -282,6 +282,8 @@
     "Save" : "Sarva",
     "Today" : "Oe",
     "Tomorrow" : "Cras",
-    "No due" : "Peruna iscadèntzia"
+    "No due" : "Peruna iscadèntzia",
+    "Set as default board" : "Ponni comente taulera predefinita",
+    "Remove as default board" : "Bogai comente taulera predefinita"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

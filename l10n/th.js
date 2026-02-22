@@ -60,6 +60,8 @@ OC.L10N.register(
     "Share" : "แชร์",
     "Save" : "บันทึก",
     "Today" : "วันนี้",
-    "Tomorrow" : "พรุ่งนี้"
+    "Tomorrow" : "พรุ่งนี้",
+    "Set as default board" : "ตั้งเป็นกระดานเริ่มต้น",
+    "Remove as default board" : "ลบออกจากกระดานเริ่มต้น"
 },
 "nplurals=1; plural=0;");

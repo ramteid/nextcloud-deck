@@ -28,6 +28,8 @@ OC.L10N.register(
     "Close" : "បិទ",
     "Share" : "ចែក​រំលែក",
     "Save" : "រក្សាទុក",
-    "Today" : "ថ្ងៃ​នេះ"
+    "Today" : "ថ្ងៃ​នេះ",
+    "Set as default board" : "កំណត់ជាក្ដារខៀនលំនាំដើម",
+    "Remove as default board" : "លុបចេញពីក្ដារខៀនលំនាំដើម"
 },
 "nplurals=1; plural=0;");
